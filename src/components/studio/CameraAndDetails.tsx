@@ -417,8 +417,8 @@ export function AppleLogo({
             };
             resolve(cachedLogo);
           };
-          img.onerror = () => reject(new Error('Failed to load /apple-logo.png'));
-          img.src = '/apple-logo.png';
+          img.onerror = () => reject(new Error('Failed to load apple-logo.png'));
+          img.src = `${import.meta.env.BASE_URL}apple-logo.png`;
         }));
 
     promise.then((res) => {

@@ -10,7 +10,7 @@ export function BrandPill({ isDark = true }: { isDark?: boolean }) {
     >
       <span className="relative size-6 shrink-0 flex items-center justify-center">
         <img
-          src="/logo.png"
+          src={`${import.meta.env.BASE_URL}logo.png`}
           alt="Free Mockup Tool"
           className="size-6 rounded-md object-contain"
         />
